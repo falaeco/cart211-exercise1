@@ -1,0 +1,88 @@
+/* SASS VARIABLE */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* Define 1rem = 10px */
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  background-color: floralwhite; }
+
+.header {
+  float: left; }
+  .header__branding {
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-left: 2.3rem;
+    padding: 1rem; }
+  .header__navigation {
+    position: absolute;
+    top: 20rem;
+    left: 1rem;
+    transform-origin: left top;
+    transform: rotate(-90deg); }
+    .header__navigation a {
+      text-decoration: none;
+      padding-right: 1rem;
+      z-index: 100; }
+      .header__navigation a:link {
+        color: inherit; }
+      .header__navigation a:hover {
+        color: plum; }
+
+/* Could possibly insert a media query so every elements of the biography stacks
+   on top of each other. */
+.biography {
+  position: relative;
+  min-height: 55rem;
+  height: 65vw;
+  margin-bottom: 15rem;
+  margin-left: 5rem; }
+  .biography__title {
+    position: absolute;
+    left: 10rem;
+    background-color: navy;
+    color: ghostwhite;
+    padding: 7rem 3rem; }
+  .biography__picture {
+    position: absolute;
+    width: 90%;
+    right: 0;
+    top: 5rem;
+    z-index: -1; }
+  .biography__text {
+    position: absolute;
+    max-width: 56rem;
+    bottom: 0;
+    right: 0;
+    background-color: firebrick;
+    color: ghostwhite;
+    padding: 2rem 6rem; }
+
+.nice-quote {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/quote_picture.jpg");
+  background-size: cover;
+  background-position: center; }
+  .nice-quote__blockquote {
+    font: italic 3.5rem 'Playfair Display', serif;
+    text-align: center;
+    line-height: 5rem;
+    width: 26rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: ghostwhite;
+    padding: 3rem; }
+    .nice-quote__blockquote .quote-mark {
+      font-size: 2.5rem; }

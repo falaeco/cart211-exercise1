@@ -1,0 +1,97 @@
+.header{
+    float: left;
+
+    &__branding{
+        font-size: 2.2rem;
+        font-weight: 200;
+        margin-left: 2.3rem;
+        padding: 1rem;
+    }
+
+    &__navigation{
+        position: absolute;
+        top: 20rem;
+        left: 1rem;
+        transform-origin: left top;
+        transform: rotate(-90deg);
+    
+        a {
+            text-decoration: none;
+            padding-right: 1rem;
+            z-index: 100;
+            &:link{
+                color: inherit
+            }
+            &:hover{
+                color: plum;
+            }
+        }
+    }
+}
+ 
+
+main{
+    //position: relative;
+}
+
+/* Could possibly insert a media query so every elements of the biography stacks
+   on top of each other. */
+.biography{
+    position: relative;
+    min-height: 55rem;
+    height: 65vw;
+    margin-bottom: 15rem;
+    margin-left: 5rem;
+    
+    &__title{
+        position: absolute;
+        left: 10rem;
+        background-color: navy;
+        color: ghostwhite;
+        padding: 7rem 3rem;
+    }
+
+    &__picture{
+        position: absolute;
+        width: 90%;
+        right: 0;
+        top: 5rem;
+        z-index: -1;
+    }
+
+    &__text{
+        position: absolute;
+        max-width: 56rem;
+        bottom: 0;
+        right: 0;
+        background-color: firebrick;
+        color: ghostwhite; 
+        padding: 2rem 6rem;
+    }
+}
+
+.nice-quote{
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/quote_picture.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &__blockquote{
+        font: italic 3.5rem 'Playfair Display', serif;
+        text-align: center;
+        line-height: 5rem;
+        width: 26rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: ghostwhite;
+        padding: 3rem;
+
+        .quote-mark{
+            font-size: 2.5rem;
+        }
+    }
+}
+

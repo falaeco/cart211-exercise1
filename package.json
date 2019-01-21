@@ -1,0 +1,14 @@
+{
+  "name": "exercise01",
+  "version": "1.0.0",
+  "description": "Exercise for cart211",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass/main.scss css/main.css -w"
+  },
+  "author": "Nicolas Prudhomme",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
